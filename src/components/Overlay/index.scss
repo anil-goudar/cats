@@ -1,0 +1,27 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 300px;
+  }
+  & .cross {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+  }
+}

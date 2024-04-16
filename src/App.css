@@ -1,0 +1,22 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 120px;
+  & .row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+}
