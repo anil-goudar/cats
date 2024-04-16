@@ -5,4 +5,5 @@
 3. run following commands
 
    `npm install`
+   
    `npm run dev`
