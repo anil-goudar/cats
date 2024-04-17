@@ -5,7 +5,11 @@ import "./index.css";
 
 async function deferRender() {
   const { worker } = await import("./mocks/browser.js");
-  return worker.start();
+  return worker.start({
+    serviceWorker: {
+      url: "/mockServiceWorker.js",
+    },
+  });
 }
 
 deferRender().then(() => {
